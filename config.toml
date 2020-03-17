@@ -4,6 +4,7 @@ title = "Frank Zhang"
 theme = "minimal"
 disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
+publishDir = "frankzhang427.github.io"
 
 [params]
     author = "Frank Zhang"

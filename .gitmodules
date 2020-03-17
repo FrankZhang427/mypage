@@ -2,3 +2,7 @@
 	path = public
 	url = https://github.com/frankzhang427/frankzhang427.github.io.git
 	branch = master
+[submodule "themes/minimal"]
+	path = themes/minimal
+	url = https://github.com/calintat/minimal.git
+	branch = master
