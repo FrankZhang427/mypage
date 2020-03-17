@@ -1,0 +1,70 @@
+baseURL = "http://frankzhang427.github.io/"
+languageCode = "en-us"
+title = "Frank Zhang"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "Frank Zhang"
+    description = "Personal page about meself"
+    githubUsername = "#"
+    accent = "purple"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:zhiguozhangfrank@gmail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/frankzhang427/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/1093863886"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/frank-zhang-b4204ba3/"
+    name = "linkedin"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://math.stackexchange.com/users/221734/franky?tab=profile"
+    name = "stack-overflow"
+    weight = 5
+
+[markup.goldmark.renderer]
+    unsafe= true
