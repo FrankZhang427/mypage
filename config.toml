@@ -1,10 +1,10 @@
-baseURL = "http://frankzhang427.github.io/"
+baseURL = "https://frankzhang427.github.io/"
 languageCode = "en-us"
 title = "Frank Zhang"
 theme = "minimal"
 disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
-publishDir = "frankzhang427.github.io"
+publishDir = "public"
 
 [params]
     author = "Frank Zhang"
