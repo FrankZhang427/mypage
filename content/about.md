@@ -3,7 +3,7 @@ title: About
 description: Who is Frank Zhang?
 ---
 
-I am Zhiguo Zhang, also known as Frank. Recently, I obtained my Master of Science degree from School of Computer Science at McGill University. My interests are Computer Graphics and Animations, Games, and Machine Learning.
+My name is Zhiguo Zhang, also known as Frank. I was born in [Dongying](https://en.wikipedia.org/wiki/Dongying), China. I grew up in Dongying and went to McGill University for a Bachelor of Science degree in Honours Statistics and Computer Science, plus a Minor in Finance. Recently in February 2020, I obtained my Master of Science degree from [School of Computer Science](https://www.cs.mcgill.ca/) at McGill University under the supervision of Professor [Paul G. Kry](https://www.cs.mcgill.ca/~kry/).  My research interests are in computer graphics and animation, modern computer games, and applied machine learning.
 
-In my spare time, I like sketching and practicing Chinese calligraphy.
+In my spare time, I like sketching, practicing Chinese calligraphy, and cooking.
 

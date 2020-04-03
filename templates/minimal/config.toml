@@ -18,11 +18,6 @@ publishDir = "public"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
     copyright = "Copyright &copy; 2020 [Zhiguo Zhang](https://frankzhang427.github.io). All rights reserved."
     favicon = "img/favicon.png"
-    darkMode = true
-    [favicon.color]
-        mask = "#252627"
-        msapplication = "#252627"
-        theme = "#252627"
 
 [[menu.main]]
     url = "/"

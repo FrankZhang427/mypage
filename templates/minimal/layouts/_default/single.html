@@ -1,0 +1,32 @@
+{{ partial "header" . }}
+
+<main>
+
+    <div>
+        {{ $.Scratch.Set "code" .RelPermalink }}
+        {{ printf "pdf/%s.pdf" .File.TranslationBaseName | absURL | $.Scratch.Set "pdf" }}
+        {{ with .Params.code }}
+            {{ $repoHost := default "github" $.Params.repoHost }}
+            {{ if eq "github" $repoHost }}
+                {{ printf "https://github.com/%s/%s/" $.Site.Params.githubUsername . | $.Scratch.Set "code" }}
+            {{ else if eq "gitlab" $repoHost }}
+                {{ printf "https://gitlab.com/%s/%s/" $.Site.Params.gitlabUsername . | $.Scratch.Set "code" }}
+            {{ else if eq "bitbucket" $repoHost }}
+                {{ printf "https://bitbucket.org/%s/%s/" $.Site.Params.bitbucketUsername . | $.Scratch.Set "code" }}
+            {{ end }}
+        {{ end }}
+        <h2>{{ .Title }}</h2>
+
+        {{ if .Params.code }}
+            <h5><a href="{{ .Scratch.Get "code" }}"><strong><u>Code</u></strong></a> and <a href="{{ .Scratch.Get "pdf" }}"><strong><u>Report</u></strong></a></h5> 
+        {{ end }}
+
+        <h5>{{ .Description }}</h5>
+        {{ partial "tags" . }}
+    </div>
+
+    <div align="start" class="content">{{ .Content }}</div>
+
+</main>
+
+{{ partial "footer" . }}
