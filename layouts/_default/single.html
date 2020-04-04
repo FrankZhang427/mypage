@@ -4,7 +4,6 @@
 
     <div>
         {{ $.Scratch.Set "code" .RelPermalink }}
-        {{ printf "pdf/%s.pdf" .File.TranslationBaseName | absURL | $.Scratch.Set "pdf" }}
         {{ with .Params.code }}
             {{ $repoHost := default "github" $.Params.repoHost }}
             {{ if eq "github" $repoHost }}
@@ -17,10 +16,16 @@
         {{ end }}
         <h2>{{ .Title }}</h2>
 
-        {{ if .Params.code }}
-            <h5><a href="{{ .Scratch.Get "code" }}"><strong><u>Code</u></strong></a> and <a href="{{ .Scratch.Get "pdf" }}"><strong><u>Report</u></strong></a></h5> 
+        {{ if .Params.report }}
+            {{ printf "pdf/%s.pdf" .File.TranslationBaseName | absURL | $.Scratch.Set "pdf" }}
+            {{ if .Params.code }}
+                <h5><a href="{{ .Scratch.Get "code" }}"><strong><u>Code</u></strong></a> and <a href="{{ .Scratch.Get "pdf" }}"><strong><u>Report</u></strong></a></h5> 
+            {{ end }}
+        {{ else }}
+            {{ if .Params.code }}
+                <h5><a href="{{ .Scratch.Get "code" }}"><strong><u>Code</u></strong></a></h5> 
+            {{ end }}
         {{ end }}
-
         <h5>{{ .Description }}</h5>
         {{ partial "tags" . }}
     </div>
