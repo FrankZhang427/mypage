@@ -64,7 +64,7 @@ publishDir = "public"
     weight = 3
 
 [[menu.icon]]
-    url = "https://www.linkedin.com/in/frank-zhang-b4204ba3/"
+    url = "https://www.linkedin.com/in/zhiguo-frank-zhang-b4204ba3/"
     name = "linkedin"
     weight = 4
 
