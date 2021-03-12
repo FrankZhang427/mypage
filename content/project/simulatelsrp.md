@@ -3,7 +3,7 @@ title: "Simulate Link State Routing Protocol"
 description: "Project for computer network course"
 code: "SimulateLSRP"
 tags: ["Link State Routing", "java"]
-weight: 5
+weight: 8
 report: false
 draft: false
 ---

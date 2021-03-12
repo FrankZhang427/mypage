@@ -3,7 +3,7 @@ title: "Mini Games in Unity"
 description: "Four mini games developed in Unity for modern computer games course"
 code: ""
 tags: ["Computer Games", "Unity", "c#"]
-weight: 4
+weight: 7
 report: false
 draft: false
 ---

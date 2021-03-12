@@ -17,7 +17,9 @@
         <h2>{{ .Title }}</h2>
 
         {{ if .Params.report }}
-            {{ printf "pdf/%s.pdf" .File.TranslationBaseName | absURL | $.Scratch.Set "pdf" }}
+            <!-- {{ printf "pdf/%s.pdf" .File.TranslationBaseName | absURL | $.Scratch.Set "pdf" }} -->
+            {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
+            {{ printf "pdf/%s.pdf" $lastUrlElement | absURL | $.Scratch.Set "pdf" }}
             {{ if .Params.code }}
                 <h5><a href="{{ .Scratch.Get "code" }}"><strong><u>Code</u></strong></a> and <a href="{{ .Scratch.Get "pdf" }}"><strong><u>Report</u></strong></a></h5> 
             {{ end }}

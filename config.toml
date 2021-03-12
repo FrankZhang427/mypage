@@ -16,7 +16,7 @@ publishDir = "public"
     highlight = true
     highlightStyle = "default"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
-    copyright = "Copyright &copy; 2020 [Zhiguo Zhang](https://frankzhang427.github.io). All rights reserved."
+    copyright = "Copyright &copy; 2020-2021 [Zhiguo Zhang](https://frankzhang427.github.io). All rights reserved."
     favicon = "img/favicon.png"
     darkMode = true
     [favicon.color]
