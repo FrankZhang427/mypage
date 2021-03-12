@@ -8,9 +8,9 @@ var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
 setTheme(savedTheme);
 
 toggle.addEventListener("click", () => {
-  if (toggle.className === "fa fa-moon-o") {
+  if (toggle.className === "far fa-moon") {
     setTheme("dark");
-  } else if (toggle.className === "fa fa-sun-o") {
+  } else if (toggle.className === "far fa-sun") {
     setTheme("light");
   }
 });
@@ -20,11 +20,11 @@ function setTheme(mode) {
 
   if (mode === "dark") {
     darkTheme.disabled = false;
-    toggle.className = "fa fa-sun-o";
+    toggle.className = "far fa-sun";
     toggle.title = "Enable Light Mode";
   } else if (mode === "light") {
     darkTheme.disabled = true;
-    toggle.className = "fa fa-moon-o";
+    toggle.className = "far fa-moon";
     toggle.title = "Enable Dark Mode";
   }
 }

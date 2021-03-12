@@ -55,10 +55,10 @@
                         <ul class="nav navbar-nav navbar-right">
                             {{ if .Site.Params.darkMode }}
                             <!-- Centered link -->
-                                <li class="navbar-icon"><a ><i class="fa fa-moon-o" id="dark-mode-toggle"></i></a></li>
+                                <li class="navbar-icon"><a ><i class="far fa-moon" id="dark-mode-toggle"></i></a></li>
                             {{ end }}
                             {{ range sort .Site.Menus.icon }}
-                                <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
+                                <li class="navbar-icon"><a href="{{ .URL }}"><i class="{{ .Name }}"></i></a></li>
                             {{ end }}
                         </ul>
                     {{ end }}

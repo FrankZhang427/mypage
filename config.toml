@@ -9,7 +9,7 @@ publishDir = "public"
     author = "Frank Zhang"
     description = "Take your time and scroll through :-)"
     githubUsername = "frankzhang427"
-    accent = "purple"
+    accent = "darkblue"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
@@ -50,27 +50,27 @@ publishDir = "public"
 
 [[menu.icon]]
     url = "mailto:zhiguozhangfrank@gmail.com"
-    name = "envelope-o"
+    name = "far fa-envelope"
     weight = 1
 
 [[menu.icon]]
     url = "https://github.com/frankzhang427/"
-    name = "github"
+    name = "fab fa-github"
     weight = 2
 
 [[menu.icon]]
     url = "https://twitter.com/1093863886"
-    name = "twitter"
+    name = "fab fa-twitter"
     weight = 3
 
 [[menu.icon]]
     url = "https://www.linkedin.com/in/zhiguo-frank-zhang-b4204ba3/"
-    name = "linkedin"
+    name = "fab fa-linkedin-in"
     weight = 4
 
 [[menu.icon]]
     url = "https://math.stackexchange.com/users/221734/franky?tab=profile"
-    name = "stack-overflow"
+    name = "fab fa-stack-overflow"
     weight = 5
 
 [markup.goldmark.renderer]
