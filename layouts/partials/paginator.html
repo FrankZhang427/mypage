@@ -1,0 +1,21 @@
+{{ if or .Paginator.HasPrev .Paginator.HasNext }}
+
+<div class="pages">
+
+    {{ if .Paginator.HasPrev }}
+        <a class="icon pages-icon" href="{{ .Paginator.Prev.URL }}" rel="prev">
+            <i class="fa fa-arrow-left"></i>
+            Previous Page
+        </a>
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+        <a class="icon pages-icon" href="{{ .Paginator.Next.URL }}" rel="next">
+            Next Page 
+            <i class="fa fa-arrow-right"></i>
+        </a>
+    {{ end }}
+
+</div>
+
+{{ end }}
